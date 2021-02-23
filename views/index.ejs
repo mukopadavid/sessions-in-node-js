@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Register</title>
+</head>
+<body>
+     <div class="container">
+       <div class="col-lg-6 m-auto">
+         <div class="card">
+           <div class="card-header">
+             <h2>Register</h2>
+           </div>
+           <div class="card-body">
+             <form action="/register" method="post">
+               <!-- name -->
+               <div class="form-group">
+                 <label for="name">Name</label>
+                 <input type="text" name="name" id="name" class="form-control" required>
+               </div>
+               <!-- email -->
+               <div class="form-group">
+                 <label for="email">E-mail</label>
+                 <input type="email" name="email" id="email" class="form-control" required>
+               </div>
+               <!-- password -->
+               <div class="form-group">
+                 <label for="password">Password</label>
+                 <input type="password" name="password" id="password" class="form-control" required>
+               </div>
+
+               <button type="submit" class="btn btn-info">Save</button>
+
+               <div class="my-3">
+                Already have an account? <a href="/login">Login</a>
+              </div>
+             </form>
+           </div>
+         </div>
+       </div>
+     </div>
+</body>
+</html>
